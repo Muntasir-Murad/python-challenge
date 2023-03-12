@@ -12,7 +12,7 @@ with open(csvpath) as csvfile:
 
 
 
-    # Read the header row first (skip this step if there is now header)
+    # Read the header row first 
     csv_header = next(csvreader)
    
        # Read each row of data after the header
@@ -51,7 +51,7 @@ print(f"Greatest Decrease in Profits: {months[greatest_decrease_month]} $({minim
 
 
 #Exporting
-# now write this to an output file
+
 output_file = open("Financial_Analysis.txt", "w")
 output_file.write("Financial Analysis\n")
 output_file.write("----------------------------\n")
